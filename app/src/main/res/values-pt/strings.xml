@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Labs</string>
+    <string name="Close">Fechar</string>
+    <string name="Next_Page">Próxima Página</string>
+    <string name="MainActivity">Atividade Principal</string>
+    <string name="MainActivity2">Segunda Atividade</string>
+</resources>

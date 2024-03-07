@@ -4,18 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
-        val buttonClick = findViewById<Button>(R.id.button_inicial)
+        val buttonClick = findViewById<Button>(R.id.button2)
         buttonClick.setOnClickListener{
-            val intent =  Intent(this, MainActivity2::class.java).apply {putExtra("name", "Joao Pedro")}
-            startActivity(intent)
             finish()
         }
+
+        val name = intent.getStringExtra("name");
+        findViewById<TextView>(R.id.textView3).apply { text = name }
     }
 }
